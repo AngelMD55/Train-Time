@@ -1,0 +1,26 @@
+#trainImage{
+    width: 200px;
+}
+
+#anyTime{
+    margin-top:50px;
+}
+
+#topS{
+    border-bottom: 3px solid rgb(238, 30, 30);
+}
+
+#cardcss, #cardAddTrain{
+    width:100%;
+    margin-top: 20px;
+}
+
+.card-header{
+    background-color: rgb(75, 75, 245);
+    font-size: 20px;
+    padding: 10px;
+}
+
+#submitBtn{
+    background-color: rgb(75, 75, 245);
+}

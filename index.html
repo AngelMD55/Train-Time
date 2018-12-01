@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/css-reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='row' id='topS'>
+            <div class='col-md-4'>
+                <img src='assets/images/train.jpg' alt='train Image' id='trainImage'>
+            </div>
+            <div class='col-md-4' id='title'>
+                <h1 class='text-center' id='anyTime'>Any Time is Train time</h1>
+            </div>
+            <div class='col-md-4' id='slide'>
+
+            </div>
+        </div>
+
+        <div class='row' id='allTrains'>
+            <div class="card" id="cardcss">
+                <div class="card-header">
+                    Current Train Schedule
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id='tbody'>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class='row' id='input'>
+            <div class="card" id="cardAddTrain">
+                <div class="card-header">
+                    Add Train
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="trainTime">Train Name</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="Type in Train Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="Destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Type in Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="militaryTime">First Train Time (HH:mm -military time)</label>
+                            <input type="text" class="form-control" id="militaryTime" placeholder="Type in time (HH:mm - military time)">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequency" placeholder="Type in Frequency (min)">
+                        </div>
+                    </form>
+                    <button type="submit" class="btn mb-2" id='submitBtn'>Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src='assets/script/moment.js'></script>
+</body>
+
+</html>
