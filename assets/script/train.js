@@ -1,3 +1,5 @@
+$('document').ready(function(){
+
 let trains = []
 
 $('#submitBtn').on('click', function (event) {
@@ -84,4 +86,4 @@ function populateTrains(trains) {
 
         $('#tbody').append(newRow);
     }
-}
+}});
