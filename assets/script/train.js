@@ -62,6 +62,9 @@ $('#submitBtn').on('click', function (event) {
     frequencyInput = $('#frequency').val('');
 })
 trains = JSON.parse(localStorage.getItem("Train-Info"));
+if(!Array.isArray(trains)){
+    trains = [];
+}
 populateTrains(trains);
 function populateTrains(trains) {
     for (let i = 0; i < trains.length; i++) {
